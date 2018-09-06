@@ -48,9 +48,10 @@ a {
 
 .navbar {
   font-size: 12px;
-  margin: 0 0 15px 0;
+  margin: 0 auto 15px auto;
   padding-top: 5px;
   border-top: dotted 1px;
+  max-width: 700px;
 }
 
 .navbar a {
@@ -92,7 +93,7 @@ a {
   display: block;
   margin: auto;
   width: 70%;
-  max-width: 600px;
+  max-width: 500px;
   padding: 5px;
   background-color: #fff;
 }
@@ -108,22 +109,27 @@ a {
   vertical-align: text-top;
 }
 
-.projectLink {
-  font-size: 10px;
-  font-weight: bold;
-}
-
 .dottedLine {
   margin: 10px auto;
   width: 50%;
   border-top: dotted 1px
 }
 
+.projectsDescriptionContainer {
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.projectLink {
+  font-size: 10px;
+  font-weight: bold;
+}
+
 /* about css */
 
 .headshot {
   width: 80%;
-  max-width: 300px;
+  max-width: 350px;
   padding: 5px;
   background-color: white;
   margin: 25px auto 10px auto;
@@ -135,6 +141,11 @@ a {
   font-size: 13px;
   margin: 5px auto 0 auto;
   border-bottom: dotted 1px;
+}
+
+.aboutDescriptionContainer {
+  max-width: 700px;
+  margin: 10px auto;
 }
 
 .valuesDiv {
@@ -161,8 +172,9 @@ a {
 
 .segment {
   display: block;
-  margin: 5px;
-  font-size: 11px
+  margin: 5px auto;
+  font-size: 11px;
+  max-width: 700px;
 }
 
 .year {
@@ -178,7 +190,7 @@ a {
   display: block;
   margin: auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   padding: 3px;
   background-color: #fff
 }
@@ -196,13 +208,14 @@ a {
 /* footer css */
 
 .footer {
-  margin: 50px 0 35px 0;
+  margin: 50px auto 35px auto;
   bottom: 0;
   left: 0;
   right: 0;
   height: 30px;
   padding-top: 25px;
   border-top: 1px dotted #3d3d3d;
+  max-width: 700px;
   padding: 5px 0 10px 0;
 }
 
