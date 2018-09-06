@@ -50,7 +50,7 @@ a {
   font-size: 12px;
   margin: 0 auto 15px auto;
   padding-top: 5px;
-  border-top: dotted 1px;
+  border-top: solid 1px #777;
   max-width: 950px;
 }
 
@@ -85,8 +85,9 @@ a {
 .projectHeader {
   display: inline-block;
   font-family: 'Homemade Apple', cursive;
-  font-size: 13px;
-  margin: 25px 0 0 0;
+  border-bottom: solid 1px #777;
+  font-size: 14px;
+  margin: 25px 0 10px 0;
 }
 
 .screenshot {
@@ -94,8 +95,13 @@ a {
   margin: auto;
   width: 70%;
   max-width: 500px;
-  padding: 5px;
+  padding: 3px;
   background-color: #fff;
+  box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.75);
+}
+
+#unevenPaddingScreenshot {
+  padding: 3px 3px 0 3px;
 }
 
 .innerScreenshot {
@@ -109,10 +115,10 @@ a {
   vertical-align: text-top;
 }
 
-.dottedLine {
+.solidLine {
   margin: 10px auto;
   width: 50%;
-  border-top: dotted 1px
+  border-top: solid 1px #777;
 }
 
 .projectsDescriptionContainer {
@@ -130,9 +136,10 @@ a {
 .headshot {
   width: 80%;
   max-width: 350px;
-  padding: 5px;
+  padding: 3px;
   background-color: white;
   margin: 25px auto 10px auto;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .aboutHeader {
@@ -140,7 +147,7 @@ a {
   font-family: 'Homemade Apple', cursive;
   font-size: 13px;
   margin: 5px auto 0 auto;
-  border-bottom: dotted 1px;
+  border-bottom: solid 1px #777;
 }
 
 .aboutDescriptionContainer {
@@ -172,7 +179,7 @@ a {
 
 .segment {
   display: block;
-  margin: 5px auto;
+  margin: 7px auto;
   font-size: 11px;
   max-width: 775px;
 }
@@ -180,29 +187,31 @@ a {
 .year {
   display: inline-block;
   font-family: 'Homemade Apple', cursive;
-  font-size: 16px;
+  font-size: 18px;
   height: 24px;
-  border-bottom: dotted 1px;
-  margin-bottom: 5px
+  border-bottom: solid 1px #777;
+  margin: 0 auto;
 }
 
 .banner {
   display: block;
-  margin: auto;
+  margin: 10px auto;
   width: 100%;
   max-width: 550px;
   padding: 3px;
-  background-color: #fff
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .lighterBanner {
   display: block;
-  margin: auto;
+  margin: 10px auto;
   width: 100%;
   max-width: 500px;
   opacity: .85;
-  padding: 5px;
-  background-color: #fff
+  padding: 3px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 /* footer css */
@@ -214,7 +223,7 @@ a {
   right: 0;
   height: 30px;
   padding-top: 25px;
-  border-top: 1px dotted #3d3d3d;
+  border-top: 1px solid #777;
   max-width: 950px;
   padding: 5px 0 10px 0;
 }
