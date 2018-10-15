@@ -82,14 +82,6 @@ a {
 
 /* projects css */
 
-.projectHeader {
-  display: inline-block;
-  font-family: 'Homemade Apple', cursive;
-  border-bottom: solid 1px #777;
-  font-size: 14px;
-  margin: 25px 0 10px 0;
-}
-
 .screenshot {
   display: block;
   margin: auto;
@@ -111,8 +103,7 @@ a {
 .githubLogo {
   height: 15px;
   width: 15px;
-  padding: 0 5px;
-  vertical-align: text-top;
+  padding: 10px;
 }
 
 .solidLine {
@@ -247,4 +238,8 @@ a {
 
 .city {
   margin: 0;
+}
+
+#about, #timeline {
+  display: none;
 }
