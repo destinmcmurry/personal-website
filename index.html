@@ -2,20 +2,18 @@
 <html xmlns='http://www.w3.org/1999/xhtml'>
 
 <head>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' type='text/css' href='style.css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet'>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
-    <title>Destin McMurry</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet'>
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+  <title>Destin McMurry</title>
 </head>
 
 <body>
   <div id='root'>
     <div class='app'>
 
-<!--NAVBAR-->
       <h1 class='header'>Destin McMurry</h1>
       <span class='subheader'>Full-Stack JavaScript Developer</span>
       <div class='navbar'>
@@ -25,10 +23,52 @@
         <span class='seperator'>|</span>
         <a id='timelineBtn' href='#/timeline'>timeline</a>
       </div>
+
+      <div id='main-page'></div>
+
+      <div class='footer'>
+        <br/>
+        <a href='https://drive.google.com/open?id=1gCwZffM66EE0M_Qjt9Rrx2-6rErxyAZc' target='blank'>
+          <img class='driveLogo' src='https://image.flaticon.com/icons/svg/179/179324.svg' alt='google drive logo'/>
+        </a>
+        <p class='city'>Brooklyn, NY</p>
+        <a href='mailto:destinmcmurry@gmail.com'>
+          <p class='email'>destinmcmurry@gmail.com</p>
+        </a>
+        <a href='https://codepen.io/destinmcmurry/' target='blank'>
+          <img class='logo' src='https://image.flaticon.com/icons/svg/51/51767.svg' alt='codepen'/>
+        </a>
+        <a href='https://www.linkedin.com/in/destin-mcmurry/' target='blank'>
+          <img class='logo' src='https://image.flaticon.com/icons/svg/145/145807.svg' alt='linkedin'/>
+        </a>
+        <a href='https://github.com/destinmcmurry' target='blank'>
+          <img class='logo' src='https://image.flaticon.com/icons/svg/25/25231.svg' alt='github'/>
+        </a>
+        <a href='https://www.instagram.com/destinisabeach/' target='blank'>
+          <img class='logo' src='https://image.flaticon.com/icons/svg/174/174855.svg' alt='instagram'/>
+        </a>
+        <a href='https://medium.com/@destinmcmurry' target='blank'>
+          <img class='logo' src='https://image.flaticon.com/icons/svg/81/81661.svg' alt='medium'/>
+        </a>
+      </div>
       
-<!--PROJECTS PAGE-->
-      <div id='projects'>
-        <div class='project-container'>
+    </div>
+  </div>
+
+  <script>
+
+    const clearMainPage = () => {
+      const mainPage = document.getElementById('main-page');
+      while (mainPage.firstChild) {
+        mainPage.removeChild(mainPage.firstChild);
+      }
+    }
+
+    const addProjectsToMainPage = () => {
+      const mainPage = document.getElementById('main-page');
+      const projectsPage = document.createElement('div');
+      projectsPage.id = 'projects';
+      projectsPage.innerHTML = `<div class='project-container'>
           <a href='https://github.com/destinmcmurry/weather-app' target='blank'><img class='githubLogo' src='https://image.flaticon.com/icons/svg/25/25231.svg' alt='github'/></a>
           <a class='screenshot' href='https://cryptic-gorge-87239.herokuapp.com/' target='blank'><img class='innerScreenshot'  src='https://github.com/destinmcmurry/personal-website/blob/master/images/whether-screenshot.png?raw=true' alt='whether'/></a>
           <div class='projectsDescriptionContainer'>
@@ -73,11 +113,18 @@
             <small>The Wagstaff Elementary School Management site organizes students into their corresponding homerooms and allows the user to add new homerooms and students easily by filling out a quick form and to delete homerooms and students with the click of a button. If a teacher's homeroom is deleted, all students previously assigned will be updated to display 'no homeroom.'</small>
             <p>stack: JavaScript, HTML, CSS, Node.js, Express, React.js, Redux, React-Redux, PostgreSQL, Sequelize</p>
           </div>
-        </div>
-      </div>
+        </div>`;
+      clearMainPage();
+      mainPage.appendChild(projectsPage);
+      console.log(mainPage);
+    }
 
-<!--ABOUT PAGE-->
-      <div id='about'>
+    const addAboutToMainPage = () => {
+      const mainPage = document.getElementById('main-page');
+      const aboutPage = document.createElement('div');
+      aboutPage.id = 'about';
+      aboutPage.innerHTML = 
+      `<div>
         <img class='headshot' src='https://github.com/destinmcmurry/personal-website/blob/master/images/me.jpg?raw=true' alt='headshot'/>
         <br />
         <h4 class='aboutHeader'>Before coding</h4>
@@ -105,9 +152,17 @@
         <a class='aboutLink' href='https://www.youtube.com/watch?v=ryAuEQ3MwcQ&t=1s' target='blank'>'My Basic 3 Settlers of Catan Strategies'</a>
         <a class='aboutLink' href='https://drive.google.com/open?id=1wJUSuDPWiZsq_Q_zaAbx2-1qNAPLrTSGAo0ISC12e9A' target='blank'>Design Portfolio</a>
       </div>
+      `;
+      clearMainPage();
+      mainPage.appendChild(aboutPage);
+      console.log(mainPage);
+    }
 
-<!--TIMELINE PAGE-->
-      <div id='timeline'>
+    const addTimelineToMainPage = () => {
+      const mainPage = document.getElementById('main-page');
+      const timelinePage = document.createElement('div');
+      timelinePage.id = 'timeline';
+      timelinePage.innerHTML = `
         <div class='tl'>
           <span class='year'>2010</span>
           <img class='lighterBanner' src='https://github.com/destinmcmurry/personal-website/blob/master/images/msBanner.jpg?raw=true' alt='rural ms'/>
@@ -163,63 +218,32 @@
             <span class='segment'>:</span>
             <span class='segment'>presented my final project on Facebook Live without passing out and graduated from Grace Hopper eager to find my next role as a front-end or full-stack software developer</span>
           </div>
-      </div>
+      `;
+      clearMainPage();
+      mainPage.appendChild(timelinePage);
+      console.log(mainPage);
+    }
 
-<!--FOOTER-->
-      <div class='footer'>
-        <br/>
-        <a href='https://drive.google.com/open?id=1gCwZffM66EE0M_Qjt9Rrx2-6rErxyAZc' target='blank'>
-          <img class='driveLogo' src='https://image.flaticon.com/icons/svg/179/179324.svg' alt='google drive logo'/>
-        </a>
-        <p class='city'>Brooklyn, NY</p>
-        <a href='mailto:destinmcmurry@gmail.com'>
-          <p class='email'>destinmcmurry@gmail.com</p>
-        </a>
-        <a href='https://codepen.io/destinmcmurry/' target='blank'>
-          <img class='logo' src='https://image.flaticon.com/icons/svg/51/51767.svg' alt='codepen'/>
-        </a>
-        <a href='https://www.linkedin.com/in/destin-mcmurry/' target='blank'>
-          <img class='logo' src='https://image.flaticon.com/icons/svg/145/145807.svg' alt='linkedin'/>
-        </a>
-        <a href='https://github.com/destinmcmurry' target='blank'>
-          <img class='logo' src='https://image.flaticon.com/icons/svg/25/25231.svg' alt='github'/>
-        </a>
-        <a href='https://www.instagram.com/destinisabeach/' target='blank'>
-          <img class='logo' src='https://image.flaticon.com/icons/svg/174/174855.svg' alt='instagram'/>
-        </a>
-        <a href='https://medium.com/@destinmcmurry' target='blank'>
-          <img class='logo' src='https://image.flaticon.com/icons/svg/81/81661.svg' alt='medium'/>
-        </a>
-      </div>
-      
-    </div>
-  </div>
+    const routes = {
+      '/': addProjectsToMainPage,
+      '/projects': addProjectsToMainPage,
+      '/about': addAboutToMainPage,
+      '/timeline': addTimelineToMainPage
+    }
 
+    function router() {
+      var url = location.hash.slice(1) || '/';
+      var route = routes[url];
+      if (route) {
+        route();
+      } else {
+        console.log(`Error: GET /${url}
+        Page doesn't exist`);
+      }
+    }
 
-<!--NAVBAR FUNCTIONALITY-->
-  <script>
-
-    $(document).ready(function () {
-
-        $('#projectsBtn').bind('click', function () {
-            $('#projects').show();
-            $('#about').hide();
-            $('#timeline').hide();
-        });
-
-        $('#aboutBtn').bind('click', function () {
-            $('#about').show();
-            $('#projects').hide();
-            $('#timeline').hide();
-        });
-
-        $('#timelineBtn').bind('click', function () {
-            $('#timeline').show();
-            $('#projects').hide();
-            $('#about').hide();
-        });
-
-    });
+    window.addEventListener('hashchange', router);
+    window.addEventListener('load', router);
 
   </script>
 
