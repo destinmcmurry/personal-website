@@ -134,6 +134,7 @@ a {
 
 .headshot {
   max-width: 350px;
+  width: 95%;
   padding: 3px;
   background-color: white;
   margin: 25px auto 10px auto;
