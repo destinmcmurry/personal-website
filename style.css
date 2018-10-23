@@ -1,3 +1,12 @@
+#preloaded-images {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px; 
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +30,7 @@ a {
 
 .app {
   text-align: center;
-  margin: 25px 35px 0 35px;
+  margin: 25px 20px 0 20px;
   min-width: 250px;
 }
 
@@ -32,7 +41,7 @@ a {
   letter-spacing: 5px;
   font-weight: 100;
   font-family: Helvetica Neue;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 .navbar {
@@ -73,22 +82,23 @@ a {
 
 .screenshot {
   display: block;
-  margin: auto;
-  width: 70%;
-  max-width: 350px;
-  padding: 13px;
+  margin: 40px auto 0 auto;
+  max-width: 500px;
+  width: 95%;
+  padding: 7px;
   background-color: #fff;
-  box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.75)
+  box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.75);
 }
 
 .project-pitch {
   font-weight: 400;
   font-size: 13px;
   font-style: oblique;
+  margin-top: 0;
 }
 
 #unevenPaddingScreenshot {
-  padding: 13px 13px 10px 13px;
+  padding: 7px 7px 3px 7px;
 }
 
 .innerScreenshot {
@@ -123,8 +133,7 @@ a {
 /* about css */
 
 .headshot {
-  width: 80%;
-  max-width: 350px;
+  max-width: 275px;
   padding: 3px;
   background-color: white;
   margin: 25px auto 10px auto;
@@ -183,7 +192,7 @@ a {
 
 .banner {
   display: block;
-  margin: 10px auto;
+  margin: 25px auto;
   width: 100%;
   max-width: 350px;
   padding: 3px;
@@ -193,7 +202,7 @@ a {
 
 .lighterBanner {
   display: block;
-  margin: 10px auto;
+  margin: 25px auto;
   width: 100%;
   max-width: 350px;
   opacity: .85;
@@ -205,7 +214,7 @@ a {
 /* footer css */
 
 .footer {
-  margin: 100px auto auto auto;
+  margin: 50px auto auto auto;
   bottom: 0;
   left: 0;
   right: 0;
@@ -217,7 +226,7 @@ a {
 .logo {
   height: 25px;
   width: 25px;
-  padding: 10px;
+  padding: 13px;
 }
 
 .email {
@@ -229,4 +238,15 @@ a {
 .city {
   margin: 0;
   letter-spacing: 2px;
+}
+
+/* mobile */
+
+@media (max-width: 425px) {
+  .header {
+    font-size: 40px;
+  }
+  .logo {
+    padding: 7px;
+  }
 }
