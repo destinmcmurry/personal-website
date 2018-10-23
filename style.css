@@ -133,7 +133,7 @@ a {
 /* about css */
 
 .headshot {
-  max-width: 275px;
+  max-width: 350px;
   padding: 3px;
   background-color: white;
   margin: 25px auto 10px auto;
@@ -194,7 +194,7 @@ a {
   display: block;
   margin: 25px auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   padding: 3px;
   background-color: #fff;
   box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.75)
@@ -204,7 +204,7 @@ a {
   display: block;
   margin: 25px auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   opacity: .85;
   padding: 3px;
   background-color: #fff;
