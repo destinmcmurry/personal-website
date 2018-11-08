@@ -106,9 +106,14 @@ a {
 }
 
 .githubLogo {
-  height: 15px;
-  width: 15px;
-  padding: 10px;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+.githubLogo:hover {
+  padding: 6px;
 }
 
 .projectsDescriptionContainer {
@@ -126,7 +131,11 @@ a {
 }
 
 .projectLink {
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.projectLink:hover {
   font-weight: bold;
 }
 
@@ -228,9 +237,14 @@ a {
   padding: 5px 0;
 }
 
+.logo:hover {
+  padding: 12px;
+}
+
 .logo {
-  height: 20px;
-  width: 20px;
+  box-sizing: border-box;
+  height: 45px;
+  width: 45px;
   padding: 13px;
 }
 
@@ -250,8 +264,5 @@ a {
 @media (max-width: 425px) {
   .header {
     font-size: 40px;
-  }
-  .logo {
-    padding: 7px;
   }
 }
