@@ -141,17 +141,21 @@ a {
 
 /* about css */
 
+#myTitle {
+  margin-top: 35px;
+}
+
 .headshot {
   max-width: 350px;
   width: 95%;
   padding: 3px;
   background-color: white;
-  margin: 25px auto 10px auto;
+  margin: 10px auto 10px auto;
   box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.75)
 }
 
 .aboutHeader {
-  display: inline-block;
+  display: block;
   font-size: 25px;
   font-weight: 200;
   letter-spacing: 3px;
@@ -179,7 +183,7 @@ a {
 }
 
 .aboutLink:hover {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* timeline css */
