@@ -93,8 +93,7 @@ a {
 .project-pitch {
   font-weight: 400;
   font-size: 13px;
-  font-style: oblique;
-  margin-top: 0;
+  margin: 3px 0 10px 0;
 }
 
 #unevenPaddingScreenshot {
@@ -122,7 +121,7 @@ a {
 }
 
 .projectsDescriptionContainer p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
 }
 
