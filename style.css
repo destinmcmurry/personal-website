@@ -166,7 +166,11 @@ a {
 
 .aboutLink {
   display: block;
-  margin: 5px;
+  padding: 5px;
+}
+
+.aboutLink:hover {
+  font-weight: bold;
 }
 
 /* timeline css */
