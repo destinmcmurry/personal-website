@@ -38,7 +38,7 @@ a {
   font-size: 45px;
   margin-bottom: 0;
   min-width: 200px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   font-weight: 100;
   font-family: Helvetica Neue;
   padding-bottom: 10px;
@@ -82,7 +82,7 @@ a {
 
 .screenshot {
   display: block;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;
   max-width: 500px;
   width: 95%;
   padding: 7px;
@@ -93,7 +93,13 @@ a {
 .project-pitch {
   font-weight: 400;
   font-size: 13px;
-  margin: 3px 0 10px 0;
+  padding: 10px 0 10px 0;
+}
+
+.pitch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #unevenPaddingScreenshot {
@@ -117,7 +123,7 @@ a {
 
 .projectsDescriptionContainer {
   max-width: 650px;
-  margin: 10px auto 25px auto;
+  margin: 10px auto 50px auto;
 }
 
 .projectsDescriptionContainer p {
@@ -209,7 +215,7 @@ a {
 
 .banner {
   display: block;
-  margin: 25px auto;
+  margin: 20px auto;
   width: 100%;
   max-width: 500px;
   padding: 3px;
@@ -219,7 +225,7 @@ a {
 
 .lighterBanner {
   display: block;
-  margin: 25px auto;
+  margin: 20px auto;
   width: 100%;
   max-width: 500px;
   opacity: .85;
@@ -266,6 +272,8 @@ a {
 
 @media (max-width: 425px) {
   .header {
-    font-size: 40px;
+    font-size: 50px;
+    letter-spacing: 13px;
+    margin-top: 0;
   }
 }
