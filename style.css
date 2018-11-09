@@ -102,51 +102,51 @@ a {
   align-items: center;
 }
 
-#unevenPaddingScreenshot {
+#uneven-padding-screenshot {
   padding: 7px 7px 3px 7px;
 }
 
-.innerScreenshot {
+.inner-screenshot {
   width: 100%;
 }
 
-.githubLogo {
+.github-logo {
   height: 30px;
   width: 30px;
   box-sizing: border-box;
   padding: 7px;
 }
 
-.githubLogo:hover {
+.github-logo:hover {
   padding: 6px;
 }
 
-.projectsDescriptionContainer {
+.projects-description-container {
   max-width: 650px;
   margin: 10px auto 50px auto;
 }
 
-.projectsDescriptionContainer p {
+.projects-description-container p {
   font-size: 13px;
   font-weight: 400;
 }
 
-.projectsDescriptionContainer small {
+.projects-description-container small {
   font-size: 16px;
 }
 
-.projectLink {
+.project-link {
   font-size: 13px;
   font-weight: 500;
 }
 
-.projectLink:hover {
+.project-link:hover {
   font-weight: bold;
 }
 
 /* about css */
 
-#myTitle {
+#my-title {
   margin-top: 35px;
 }
 
@@ -159,7 +159,7 @@ a {
   box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.75)
 }
 
-.aboutHeader {
+.about-header {
   display: block;
   font-size: 25px;
   font-weight: 200;
@@ -167,12 +167,12 @@ a {
   margin: 5px auto 5px auto;
 }
 
-.aboutDescriptionContainer {
+.about-description-container {
   max-width: 650px;
   margin: 10px auto;
 }
 
-.valuesDiv {
+.values-div {
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -182,12 +182,11 @@ a {
   margin: 2px;
 }
 
-.aboutLink {
-  display: block;
+.about-link {
   padding: 5px;
 }
 
-.aboutLink:hover {
+.about-link:hover {
   font-weight: 500;
 }
 
@@ -223,7 +222,7 @@ a {
   box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.75)
 }
 
-.lighterBanner {
+.lighter-banner {
   display: block;
   margin: 20px auto;
   width: 100%;
