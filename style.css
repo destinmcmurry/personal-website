@@ -182,16 +182,12 @@ a {
   margin: 2px;
 }
 
-.about-link {
+.about-link-container {
   height: 20px;
 }
 
-.about-link {
-  padding: 5px;
-}
-
 .about-link:hover {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* timeline css */
