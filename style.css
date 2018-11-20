@@ -275,4 +275,7 @@ a {
     letter-spacing: 13px;
     margin-top: 0;
   }
+  #double-height-about-link {
+    height: 40px;
+  }
 }
